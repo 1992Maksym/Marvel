@@ -13,3 +13,7 @@
 
 # System Files
 /package-lock.json
+
+# compiled output
+/dist
+/.cache
