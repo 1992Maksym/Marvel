@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    scrollbar-color: #3199dc #222222;
+    scroll-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3199dc;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+    background-color: #222222;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
