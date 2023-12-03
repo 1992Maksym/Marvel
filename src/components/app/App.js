@@ -3,7 +3,7 @@ import './App.css';
 
 class App {
     async render() {
-        await  Comics.render()
+        await Comics.render();
     }
 }
 

@@ -12,8 +12,10 @@ class Comics {
             const img = path + IMG_STANDARD_XLARGE + extension;
 
             if(path.indexOf(IMG_NOT_AVAILABLE) === -1) {
+                const uri = URL_COMICS + '/' + id + '/characters';
+
                 html += `
-                    <li class="comics__item">
+                    <li class="comics__item" data-uri="${uri}">
                         <span class="comics__title">${title}</span>
                         <img class="comics__img" src="${img}" alt="img">
                     </li>
@@ -23,6 +25,16 @@ class Comics {
 
         const htmlContent = `<ul class="comics__container">${html}</ul>`
         ROOT_INDEX.innerHTML = htmlContent;
+    }
+
+    getCharacters() {
+        document.querySelectorAll('.comics__item').forEach(element => {
+            const uri = element.getAttribute('data-uri');
+
+            element.addEventListener('click', () => {
+                console.log(uri)
+            })
+        })
     }
 }
 export default new Comics();
