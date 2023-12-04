@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^1.6.2",
-    "components": "^0.1.0"
+    "components": "^0.1.0",
+    "src": "^1.1.2"
   }
 }
