@@ -1,0 +1,85 @@
+.charters__wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+.charters__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    padding: 20px;
+    overflow: auto;
+    background-color: #f8f9fa;
+    list-style: none;
+}
+.charters__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 250px;
+    margin: 15px;
+    border: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    background-color: #f8f9fa;
+}
+.charters__img {
+    width: 100%;
+}
+.charters__name {
+    padding: 10px;
+    text-align: center;
+
+    /*styles for hidden text if text is long*/
+    overflow: hidden;
+    /*styles for not wrapping the text on next line*/
+    white-space: nowrap;
+    /*add three dots when text was cut*/
+    text-overflow: ellipsis;
+}
+.charters__close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-image: url('../../img/close.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+.empty__charters__wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+.empty__charters__container {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    width: max-content;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+}
+.empty__charters__text {
+    font-size: 22px;
+    font-weight: 500;
+}
